@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portolio Site</title>
+        <link rel="stylesheet" href="Graphic Style.css">
+        <script src="https://kit.fontawesome.com/89604a2d97.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="Official Portfolio.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="My Services.html">PORTFOLIO</a></li>
+                    <li><a href="Hire Me.html">HIRE ME</a></li>
+                </ul>
+                <img src="moon.png" id="icon">
+            </nav>
+            <h1>Graphic Design Projects</h1>
+            <div class="full" id="fullimgb">
+                <img src="Webimg/1.jpg" id="fullimg">
+                <span onclick="closefullimg()">X</span>
+            </div>
+            <div class="gallery">
+                <img src="Graphicimg/1.jpg" onclick="openfullimg(this.src)">
+                <img src="Graphicimg/2.jpg" onclick="openfullimg(this.src)">
+                <img src="Graphicimg/3.jpg" onclick="openfullimg(this.src)">
+                <img src="Graphicimg/4.jpg" onclick="openfullimg(this.src)">
+                
+                <img src="Graphicimg/6.jpg" onclick="openfullimg(this.src)">
+                <img src="Graphicimg/7.jpg" onclick="openfullimg(this.src)">
+                <img src="Graphicimg/8.jpg" onclick="openfullimg(this.src)">
+                <img src="Graphicimg/9.jpg" onclick="openfullimg(this.src)">
+                <img src="Graphicimg/10.jpg" onclick="openfullimg(this.src)">
+                <img src="Graphicimg/11.jpg" onclick="openfullimg(this.src)">
+                <img src="Graphicimg/12.jpg" onclick="openfullimg(this.src)">
+            </div>
+        </div>
+        <script>
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme")
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src = "sun.png";
+                }else{
+                    icon.src = "moon.png";
+                }
+            }
+
+            var fullimgb = document.getElementById("fullimgb");
+            var fullimg = document.getElementById("fullimg");
+           
+            function openfullimg(pic){
+                fullimgb.style.display = "flex"
+                fullimg.src = pic;
+            }
+
+            function closefullimg(){
+                fullimgb.style.display = "none"
+            }
+        </script>
+    </body>
+</html>

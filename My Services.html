@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portolio Site</title>
+        <link rel="stylesheet" href="S_styles.css">
+        <script src="https://kit.fontawesome.com/89604a2d97.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="Official Portfolio.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="My Services.html">PORTFOLIO</a></li>
+                    <li><a href="Hire Me.html">HIRE ME</a></li>
+                </ul>
+                <img src="moon.png" id="icon">
+            </nav>
+            <div class="items">
+                <div class="con1">
+                    <i class="fa-solid fa-globe"></i>
+                    <h2><span>Web</span> Devlopment</h2>
+                    <p>
+                        Here are my web design <br>
+                        sample projects. Clean <br>
+                        codes and quality designs.
+                    </p>
+                    <div class="btn">
+                        <a href="Web Dev Gallery.html">Projects</a>
+                    </div>
+                </div>
+                <div class="con2">
+                    <i class="fa-solid fa-palette"></i>
+                    <h2><span>Graphic</span> Design</h2>
+                    <p>
+                        Here are my Graphic<br>
+                        design sample projects.<br>
+                        Clean and quality designs.
+                    </p>
+                    <div class="btn">
+                        <a href="GRaphic Design Gallery.html">Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                    <a href="https://www.linkedin.com/in/sammy-sallo"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://web.facebook.com/sammy.flames01"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://wa.link/qnrly3"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/jxtsammy_"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <script>
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme")
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src = "sun.png";
+                }else{
+                    icon.src = "moon.png";
+                }
+            }
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portolio Site</title>
+        <link rel="stylesheet" href="Hire Style.css">
+        <script src="https://kit.fontawesome.com/89604a2d97.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="Official Portfolio.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="My Services.html">PORTFOLIO</a></li>
+                    <li><a href="Hire Me.html">HIRE ME</a></li>
+                </ul>
+                <img src="moon.png" id="icon">
+            </nav>
+            <div class="items">
+                <div class="con1">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h2>LinkedIn</h2>
+                    <div class="btn">
+                        <a href="https://www.linkedin.com/in/sammy-sallo">Connect</a>
+                    </div>
+                </div>
+                <div class="con2">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <h2>Facebook</h2>
+                    <div class="btn">
+                        <a href="https://web.facebook.com/sammy.flames01">Message</a>
+                    </div>
+                </div>
+                <div class="con3">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <h2>WhatsApp</h2>
+                    <div class="btn">
+                        <a href="https://wa.link/qnrly3">Chat</a>
+                    </div>
+                </div>
+                <div class="con4">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h2>Gmail</h2>
+                    <div class="btn">
+                        <a href="mailto:robertflames001@gmail.com">Send Mail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme")
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src = "sun.png";
+                }else{
+                    icon.src = "moon.png";
+                }
+            }
+           
+        </script>
+    </body>
+</html>

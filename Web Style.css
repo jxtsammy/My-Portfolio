@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+body{
+    background: var(--primary-color);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+}
+
+.dark-theme{
+    --primary-color:#000106;
+    --secondary-color:#fff;
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 12%;
+    height: 100%;
+    cursor: pointer;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-weight: 600;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+nav ul li a:hover{
+    color:#ff4321;
+}
+
+.hero{
+   background-color: var(--primary-color);
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height:4px;
+    display: block;
+    margin-top: 5%;
+    background-color:#ff4321;
+    border: 25px;
+}
+.gallery{
+    width: 85%;
+    margin: 90px auto 90px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    top: 90%;
+
+}
+
+.gallery img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.gallery img:hover{
+    transform: scale(1.15);
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.3);
+    border-radius: 10px;
+}
+
+.full{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.90);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full img{
+    width: 100%;
+    max-width: 800px;
+}
+
+.full span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
